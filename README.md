@@ -27,9 +27,19 @@ Layer 1 - Settlement        SET Chain L2
 
 Every layer is independently verifiable. No layer trusts the one above it.
 
+## Translations
+
+All three whitepapers are available in:
+
+| Language | Directory | Format |
+|----------|-----------|--------|
+| English  | [`en/`](./en/) | PDF |
+| 中文 (Chinese) | [`cn/`](./cn/) | DOCX |
+| 日本語 (Japanese) | [`jp/`](./jp/) | DOCX |
+
 ## Whitepapers
 
-### 1. [StateSet iCommerce](./1_stateset_icommerce_whitepaper.pdf)
+### 1. [StateSet iCommerce](./en/1_stateset_icommerce_whitepaper.pdf)
 **An Embedded Commerce Engine for Autonomous AI Agents** | v0.7.15 | March 2026
 
 StateSet iCommerce is an embedded, zero-dependency commerce engine designed for autonomous AI agents. Built on a Rust core with language bindings for 10 platforms, it provides a complete commerce and ERP surface area — orders, inventory, payments, returns, subscriptions, manufacturing, and more — as deterministic, locally executable operations that AI agents can safely invoke.
@@ -48,7 +58,7 @@ Design principles: local-first execution (SQLite default), deterministic operati
 
 ---
 
-### 2. [StateSet Sequencer](./2_stateset_sequencer_whitepaper.pdf)
+### 2. [StateSet Sequencer](./en/2_stateset_sequencer_whitepaper.pdf)
 **A Verifiable Event Ordering Service for Autonomous Commerce** | v0.2.5 | March 2026
 
 The StateSet Sequencer is a deterministic event ordering service that provides the cryptographic backbone for distributed commerce systems. It implements the VES v1.0 protocol — a specification for producing gap-free, Ed25519-signed, Merkle-committed event streams that can be independently audited without trusting the sequencer itself.
@@ -66,7 +76,7 @@ Architecture: Rust service on Axum + PostgreSQL, with STARK prover for complianc
 
 ---
 
-### 3. [SET Chain](./3_set_chain_whitepaper.pdf)
+### 3. [SET Chain](./en/3_set_chain_whitepaper.pdf)
 **A Commerce-Optimized Layer 2 for Verifiable Agent Transactions** | Chain ID 84532001 | OP Stack v1.8.0 | March 2026
 
 SET Chain is an Ethereum Layer 2 network purpose-built for commerce. Built on the OP Stack, it inherits Ethereum's security guarantees while providing 2-second block times, sub-cent transaction fees, and native infrastructure for the three primitives that autonomous commerce requires: verifiable event commitments (SetRegistry), gas-abstracted merchant transactions (SetPaymaster), and a yield-bearing stablecoin (ssUSD) backed by U.S. Treasury Bills.
